@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 /* eslint-disable no-undef */
 
-const ClientError = require("../../exceptions/ClientError");
+const ClientError = require('../../exceptions/ClientError');
 
 /* eslint-disable class-methods-use-this */
 class NotesHandler {
@@ -104,7 +104,7 @@ class NotesHandler {
         message: 'Catatan berhasil diperbarui',
       };
     } catch (error) {
-      if (error instanceof ClientError ) {
+      if (error instanceof ClientError) {
         const response = h.response({
           status: 'fail',
           message: error.message,
